@@ -1,6 +1,6 @@
-<h1>{{titulo}}</h1>
+<h1>{{ titulo }}</h1>
 <ul>
-  <li>Nike</li>
-  <li>Reebok</li>
-  <li>Adidas</li>
+  <li *ngFor="let deportiva of zapatillas">
+    {{ deportiva.nombre }} = <strong>{{ deportiva.precio }}$</strong>
+  </li>
 </ul>

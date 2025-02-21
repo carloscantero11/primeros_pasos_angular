@@ -1,8 +1,16 @@
-<div> 
-  <h1>{{ title}}</h1>
-  <p>
-    Vamos aprender Angular juntos
-  </p>
-  <videojuego></videojuego>
+<div>
+  <h1>{{ title }}</h1>
+  <p>{{ descripcion }}</p>
+
+  <hr />
+  <button (click)="ocultarVideojuegos()" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click)="mostrarVideojuegos()" *ngIf="!mostrar_videojuegos">Mostrar</button>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+
+  <hr />
   <zapatillas></zapatillas>
+  
+  <hr />
+  <cursos></cursos>
+  <hr />
 </div>
