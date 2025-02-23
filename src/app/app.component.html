@@ -1,16 +1,25 @@
 <div>
+   <!-- Título y descripción de la aplicación -->
   <h1>{{ title }}</h1>
   <p>{{ descripcion }}</p>
-
+<!--
   <hr />
+   <!-- Botones para mostrar/ocultar la sección de videojuegos --
   <button (click)="ocultarVideojuegos()" *ngIf="mostrar_videojuegos">Ocultar</button>
   <button (click)="mostrarVideojuegos()" *ngIf="!mostrar_videojuegos">Mostrar</button>
+   <!-- Componente de videojuegos--
   <videojuego *ngIf="mostrar_videojuegos"></videojuego>
 
   <hr />
+  <!-- Componente de zapatillas --
   <zapatillas></zapatillas>
   
   <hr />
+  <!-- Componente de zapatillas --
   <cursos></cursos>
+  
   <hr />
+  -->
+
+  <router-outlet></router-outlet>
 </div>

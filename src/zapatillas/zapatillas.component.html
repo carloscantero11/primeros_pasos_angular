@@ -1,6 +1,67 @@
+<!-- Muestra el título del componente -->
 <h1>{{ titulo }}</h1>
+
+<p>Añadir marca:</p>
+<p>
+  <!-- Input para ingresar una nueva marca -->
+  <input type="text" [(ngModel)]="mi_marca" />
+  <!-- Botoenes -->
+  <button (click)="getMiMarca()">Mostrar Marca</button>
+  <button (click)="addMiMarca()">Añadir Marca</button>
+</p>
+<!-- Muestra la marca ingresada -->
+<strong>{{mi_marca}}</strong>
+
+
+<p>Compra las zapatillas de las mejores marcas:</p>
+  <ul>
+    <!-- Itera sobre la lista de marcas y muestra cada una con su índice -->
+    <li *ngFor="let marca of marcas; let index = index">
+      <!-- Muestra el índice y la marca -->
+      {{index + ") " + marca}}
+      <button (click)="borrarMarca(index)">Borrar</button>
+    </li>
+  </ul>
+
+
+<p>Las zapatillas que tenemos disponibles:</p>
 <ul>
+   <!-- Itera sobre la lista de zapatillas y muestra cada una -->
   <li *ngFor="let deportiva of zapatillas">
-    {{ deportiva.nombre }} = <strong>{{ deportiva.precio }}$</strong>
+    {{ deportiva.nombre }} = 
+    <!-- Aplica la clase 'altoPrecio' si el precio es mayor a 120 -->
+    <strong [class.altoPrecio] = "deportiva.precio > 120">
+      {{ deportiva.precio }}$ 
+    </strong>
+
+     <!-- Muestra un mensaje de oferta si el precio es menor o igual a 120 -->
+    <span *ngIf="deportiva.precio <= 120" 
+    [style.background]="deportiva.precio <= 120 ? 'green' : 'transparent'"
+    [style.color]="deportiva.precio <= 120 ? 'white' : 'black'"
+    >¡En Oferta!
+  </span>
   </li>
 </ul>
+
+
+<p>El color de la mayoria de nuestras zapatillas es: </p>
+<!-- Muestra el color predominante según el valor de 'color' -->
+  <ul [ngSwitch]="color">
+    <li *ngSwitchCase="'yellow'">
+      El color predominante es el <span style="background-color: yellow;">amarrillo.</span>
+    </li>
+    <li *ngSwitchCase="'white'">
+      El color predominante es el <span style="background-color: white;">blanco.</span>
+    </li>
+    <li *ngSwitchCase="'black'">
+      El color predominante es el <span style="background-color: black; color: white;">negro.</span>
+    </li>
+  </ul>
+
+<!--
+
+1) Directiva Estructurales: 
+  Modifican la estructura del DOM, agregando o eliminando elementos dinámicamente.
+  Usan el símbolo * antes de su nombre (ej. *ngIf, *ngFor, *ngSwitch).
+
+-->

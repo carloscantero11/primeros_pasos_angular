@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './videojuego.component.html',
   styleUrl: './videojuego.component.css',
 })
+
+// Hooks / Eventos ciclo de vida
 export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy{
   public titulo: string;
 

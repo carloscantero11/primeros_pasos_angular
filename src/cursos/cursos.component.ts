@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
-  // Hooks / Eventos ciclo de vida
+  
   constructor () {
 
   }

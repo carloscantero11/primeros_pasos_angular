@@ -1,0 +1,12 @@
+div{
+  background-color: rgb(179, 210, 223);
+  border: solid 6px;
+  border-color: rgb(218, 0, 0);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+hr {
+  height: 2px;
+  background-color: black;
+}
