@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Zapatilla } from '../models/zapatilla';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ZapatillaService } from '../services/zapatilla.service';
 
 // Decorador que define el componente ZapatillasComponent
 @Component({
   selector: 'zapatillas',
   standalone: true,
   imports: [CommonModule, FormsModule],
+  providers: [ZapatillaService],
   templateUrl: './zapatillas.component.html',
   styleUrl: './zapatillas.component.css',
 })
@@ -15,25 +17,23 @@ import { FormsModule } from '@angular/forms';
 // Propiedades del componente
 export class ZapatillasComponent implements OnInit {
   public titulo: string = 'Componente de zapatilla'; // Título del componente
-  public zapatillas: Array<Zapatilla>; // Lista de zapatillas
   public marcas: String[]; // Lista de marcas de zapatillas
+  public zapatillas!: Array<Zapatilla>; 
   public color: string; // Color predominante
   public mi_marca: string; // Marca ingresada por el usuario
 
-  constructor() {
+  // Constructor con inyección del servicio ZapatillaService
+  constructor( 
+    private _zapatillaService: ZapatillaService
+  ) {
     this.mi_marca = '';
     this.color = 'yellow';
     this.marcas = new Array();
-    this.zapatillas = [
-      new Zapatilla('Air Jordan', 'Nike', 'Blanco', 230, true),
-      new Zapatilla('F-50', 'Adidas', 'Azul', 120, true),
-      new Zapatilla('Classic', 'Reebok', 'Blanco', 80, false),
-    ];
   }
 
   // Método que se ejecuta al inicializar el componente
   ngOnInit() {
-    console.log(this.zapatillas); // Muestra las zapatillas en consola
+    this.zapatillas = this._zapatillaService.getZapatillas();  // Obtiene las zapatillas del servicio
     this.getMarcas(); // Obtiene las marcas de las zapatillas
   }
 

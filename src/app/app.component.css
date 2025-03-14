@@ -10,3 +10,18 @@ hr {
   height: 2px;
   background-color: black;
 }
+
+nav {
+  border: solid black;
+  border-radius: 13px;
+  padding: 14px;
+  text-align: center;
+  font-size: 17px;
+
+}
+
+.active {
+  border: 3px solid yellow;
+  padding: 7px;
+  border-radius: 16px;
+}

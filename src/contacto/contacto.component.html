@@ -1,0 +1,27 @@
+<h1>Componente de Contacto</h1>
+
+<!-- Formulario Contacto Usuario --> 
+<form class="colorful-form" #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
+  <!-- Nombre -->
+  <div class="form-group">
+    <label class="form-label" for="nombre">Nombre:</label>
+    <input  placeholder="Introduce tu Nombre" class="form-input" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required>
+  </div>
+  <!-- Apellido -->
+  <div class="form-group">
+    <label class="form-label" for="apellido">Apellido:</label>
+    <input  placeholder="Introduce tu Apellido" class="form-input" type="text" name="apellido" #apellido="ngModel" [(ngModel)]="usuario.apellido" required>
+  </div>
+  <!-- Email -->
+  <div class="form-group">
+    <label class="form-label" for="email">Email:</label>
+    <input  placeholder="Introduce tu Email" class="form-input" name="email" id="email" type="email" #email="ngModel" [(ngModel)]="usuario.email" required>
+  </div>
+  <!-- Mensaje-->
+  <div class="form-group">
+    <label class="form-label" for="mensaje">Mensaje:</label>
+    <textarea  placeholder="Introduce tu Mensaje" class="form-input" name="mensaje" id="message" #mensaje="ngModel" [(ngModel)]="usuario.mensaje" required></textarea>
+  </div>
+  <!-- Submit -->
+  <button class="form-button" type="submit" value="Enviar" [disabled]="!formContacto.form.valid">Submit</button>
+</form>
