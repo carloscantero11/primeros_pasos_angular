@@ -21,6 +21,7 @@ La aplicación incluye:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white) &nbsp;
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) &nbsp;
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white) &nbsp;
+[![Axios](https://img.shields.io/badge/Axios-5A29E4.svg?style=for-the-badge&logo=Axios&logoColor=white)](https://axios-http.com/) &nbsp;
 
 </div>
 
@@ -34,9 +35,9 @@ La aplicación incluye:
 
 1. Clona el repositorio:
 
-```bash
-git clone https://github.com/carloscantero11/primeros_pasos_angular.git
-```
+    ```bash
+    git clone https://github.com/carloscantero11/primeros_pasos_angular.git
+    ```
 
 2. Instala las dependencias necesarias:
 
@@ -49,6 +50,9 @@ git clone https://github.com/carloscantero11/primeros_pasos_angular.git
     ```bash
     ng serve
     ```
+
+## ❗Problemas
+Si tienes un problema, regístralo aquí o déjame un comentario. Asegúrate de primero revisar la consola de desarrollador de tu explorador para ver si puedes identificar el problema.
 
 ## 📝 Licencia
 
