@@ -1,59 +1,59 @@
-# Primeros Pasos - Angular
+# 📌 Primeros Pasos con Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Este proyecto es una aplicación básica creada con **Angular** para explorar los fundamentos del framework, incluyendo componentes, servicios, enrutamiento y manejo de datos.
 
-## Development server
+## 📜 Descripción
 
-To start a local development server, run:
+La aplicación incluye:
 
-```bash
-ng serve
-```
+- **Componentes** básicos con interpolación y binding
+- **Directivas** estructurales (`*ngFor`, `*ngIf`)
+- **Servicios** para manejo de datos
+- **Rutas** básicas para navegación
+- **Formularios** con two-way data binding (`[(ngModel)]`)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 💻 Tecnologías utilizadas
 
-## Code scaffolding
+<div>
+    
+![Angular](https://img.shields.io/badge/Angular-DD0031.svg?style=for-the-badge&logo=Angular&logoColor=white) &nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white) &nbsp;
+![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white) &nbsp;
+![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) &nbsp;
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white) &nbsp;
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+</div>
 
-```bash
-ng generate component component-name
-```
+## ℹ️ Instalación y configuración
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Requisitos previos
+- Node.js (v16+)
+- Angular CLI (`npm install -g @angular/cli`)
 
-```bash
-ng generate --help
-```
+### Pasos para ejecutar
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Clona el repositorio:
 
 ```bash
-ng test
+git clone https://github.com/carloscantero11/primeros_pasos_angular.git
 ```
 
-## Running end-to-end tests
+2. Instala las dependencias necesarias:
 
-For end-to-end (e2e) testing, run:
+    ```bash
+    npm install
+    ```
 
-```bash
-ng e2e
-```
+3. Inicia la aplicación:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+    ```bash
+    ng serve
+    ```
 
-## Additional Resources
+## 📝 Licencia
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+
+## 🖋️ Autor
+
+- [Carlos Cantero](https://github.com/carloscantero11)
