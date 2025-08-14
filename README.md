@@ -1,8 +1,17 @@
 # 📌 Primeros Pasos con Angular
 
-Este proyecto es una aplicación básica creada con **Angular** para explorar los fundamentos del framework, incluyendo componentes, servicios, enrutamiento y manejo de datos.
+## 📑 Tabla de Contenido
+- [Descripción](#-descripción)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [Instalación y Configuración](#ℹ️-instalación-y-configuración)
+- [Requisitos previos](#requisitos-previos)
+- [Pasos para ejecutar](#pasos-para-ejecutar)
+- [Problemas](#problemas)
+- [Licencia](#-licencia)
+- [Autor](#%EF%B8%8F-autor)
 
 ## 📜 Descripción
+Este proyecto es una aplicación básica creada con **Angular** para explorar los fundamentos del framework, incluyendo componentes, servicios, enrutamiento y manejo de datos.
 
 La aplicación incluye:
 
